@@ -663,6 +663,11 @@ export const blocks = [
         ],
       },
     ],
+  }, {
+    name: "video_section",
+    label: "Education video section",
+    widget: "object",
+    fields: []
   },
   {
     name: "ordered_block",

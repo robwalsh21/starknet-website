@@ -146,6 +146,10 @@ export interface OrderedBlock {
   readonly blocks: readonly OrderedItem[];
 }
 
+export interface VideoSectionBlock {
+  readonly type: "video_section";
+}
+
 export type HeadingVariant = "h1" | "h2" | "h3" | "h4" | "h5" | "h6";
 
 export type Block =
@@ -160,7 +164,8 @@ export type Block =
   | AccordionBlock
   | OrderedBlock
   | ListCardItemsBlock
-  | AmbassadorsListBlock;
+  | AmbassadorsListBlock
+  | VideoSectionBlock;
 
 export interface Container {
   readonly type: "container";
